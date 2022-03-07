@@ -164,9 +164,12 @@ export const Tiptap = () => {
 
   return (
     <$Container>
-      {' '}
-      <MenuBar editor={editor} />
-      <EditorContent editor={editor} />
+      {editor && (
+        <>
+          <MenuBar editor={editor} />
+          <EditorContent editor={editor} />
+        </>
+      )}
     </$Container>
   )
 }
