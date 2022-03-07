@@ -9,7 +9,7 @@ type Extensions = ReactExtensions<BoldExtension>
 export const EditorWithRef = forwardRef<ReactFrameworkOutput<Extensions>>((_, ref) => {
   const { manager, state, setState, getContext } = useRemirror({ extensions })
 
-  useImperativeHandle(ref, () => getContext(), [getContext])
+  useImperativeHandle(ref, () => (getContext as any)(), [getContext])
 
   // Add the state and create an `onChange` handler for the state.
   return (
