@@ -1,6 +1,6 @@
 {
   "name": "@gratico/prosemirror",
-  "version": "0.8.3",
+  "version": "0.8.4",
   "author": "Abhishiv Saxena<abhishiv@gmail.com>",
   "description": "Prosemirror by @marijnh",
   "license": "UNLICENSED",
@@ -30,9 +30,9 @@
   "dependencies": {
     "@emotion/styled": "^11.8.1",
     "@gratico/uikit": "^0.8.3",
-    "@remirror/react": "^1.0.27",
-    "react-spring": "^9.4.3",
-    "remirror": "^1.0.70"
+    "@tiptap/react": "^2.0.0-beta.108",
+    "@tiptap/starter-kit": "^2.0.0-beta.183",
+    "react-spring": "^9.4.3"
   },
   "peerDependencies": {
     "react": "^17.0.2",

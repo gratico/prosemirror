@@ -1,14 +1,12 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import { IFileSystem, IKernel, IProject, FileParams, IFileBuffer } from '@gratico/kernel'
-import { EditorWithRef } from '../remirror'
+import { Tiptap } from '../tiptap'
 
 export function Editor(props: { kernel: IKernel; fileParams: FileParams }) {
-	const ref = React.useRef<HTMLDivElement>(null)
-
 	return (
-		<$EditorContainer ref={ref}>
-			<EditorWithRef />
+		<$EditorContainer>
+			<Tiptap />
 		</$EditorContainer>
 	)
 }
