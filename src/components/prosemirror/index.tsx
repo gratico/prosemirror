@@ -3,7 +3,7 @@ import styled from '@emotion/styled'
 
 import { IKernel, FileParams } from '@gratico/kernel'
 import { Desktop } from '@gratico/uikit'
-import { Editor } from '../editor'
+import { Editor } from '../editor/index'
 
 export interface ProseMirrorProps {
   value: unknown
