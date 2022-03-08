@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import { IFileSystem, IKernel, IProject, FileParams, IFileBuffer } from '@gratico/kernel'
-import { Tiptap } from '../tiptap'
+import { Tiptap } from '../tiptap/index'
 
 export function Editor(props: { kernel: IKernel; fileParams: FileParams }) {
 	return (
